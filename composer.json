@@ -1,0 +1,19 @@
+{
+    "name" : "wiatrogon/php-allegro-webapi",
+    "description" : "PHP client for Allegro WebAPI",
+    "keywords" : [
+        "allegro",
+        "soap"
+    ],
+    "authors" : [
+        {
+            "name" : "Piotr Jakubik",
+            "email" : "wiatrogon@gmail.com",
+            "role" : "Developer"
+        }
+    ],
+    "require" : {
+        "php" : ">=5.2",
+        "ext-soap" : "*"
+    }
+}
