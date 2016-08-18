@@ -1,3 +1,5 @@
+# php-allegro-webapi #
+
 ## Simple client for Allegro WebAPI ##
 It won't set for you fields that are required by most methods (webapiKey, sessionId, sessionHandle), altough it will attempt to handle expired (1h+) sessions gracefuly.
  
