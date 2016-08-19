@@ -30,7 +30,7 @@ $client->doGetSiteJournal($params);
 
 
 $sandbox = new AllegroWebAPI($webapiKey, $login, $password,
-                             AllegroWebAPI::COUNTRY_PL, AllegroWebAPI::SANDBOX);
+                             AllegroWebAPI::COUNTRY_PL, TRUE);
                              
 $params = array(
     'countryId' => AllegroWebApi::COUNTRY_PL,

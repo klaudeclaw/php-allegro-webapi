@@ -35,7 +35,7 @@ class AllegroWebAPI
         $login,
         $password,
         $countryId=AllegroWebAPI::COUNTRY_PL,
-        $wsdl=AllegroWebAPI::WSDL,
+        $useSandbox=FALSE,
         $options=array('features' => SOAP_SINGLE_ELEMENT_ARRAYS)
     )
     {
@@ -44,6 +44,7 @@ class AllegroWebAPI
         $this->password = base64_encode(hash('sha256', $password, TRUE));
         $this->countryId = $countryId;
 
+        $wsdl = $useSandbox ? self::SANDBOX : self::WSDL;
         $this->client = new SoapClient($wsdl, $options);
         $this->version = $this->getVersion();
         $this->sessionId = $this->sessionHandle = $this->getSessionId();
