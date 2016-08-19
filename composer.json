@@ -1,6 +1,6 @@
 {
     "name" : "wiatrogon/php-allegro-webapi",
-    "description" : "PHP client for Allegro WebAPI",
+    "description" : "Truly simple PHP client for Allegro WebAPI",
     "keywords" : [
         "allegro",
         "soap"

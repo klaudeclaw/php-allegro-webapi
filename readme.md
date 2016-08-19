@@ -1,6 +1,6 @@
 # php-allegro-webapi #
 
-## Simple client for Allegro WebAPI ##
+## Truly simple PHP client for Allegro WebAPI ##
 Just create new client instance and start coding.
 
 You don't even have to login explicitly, it's done under the hood.
