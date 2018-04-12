@@ -36,12 +36,17 @@ class AllegroWebAPI
         $password,
         $countryId=AllegroWebAPI::COUNTRY_PL,
         $useSandbox=FALSE,
-        $soapClientOptions=array('features' => SOAP_SINGLE_ELEMENT_ARRAYS)
+        $soapClientOptions=array('features' => SOAP_SINGLE_ELEMENT_ARRAYS),
+		$passwordAlreadyHashed = false
     )
     {
         $this->webapiKey = $webapiKey;
         $this->login = $login;
-        $this->password = base64_encode(hash('sha256', $password, TRUE));
+		if($passwordAlreadyHashed == false) {
+			$this->password = base64_encode(hash('sha256', $password, TRUE));
+		} else {
+			$this->password = $password;
+		}
         $this->countryId = $countryId;
 
         $wsdl = $useSandbox ? self::SANDBOX : self::WSDL;
