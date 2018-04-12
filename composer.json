@@ -1,14 +1,14 @@
 {
-    "name" : "wiatrogon/php-allegro-webapi",
-    "description" : "Truly simple PHP client for Allegro WebAPI",
+    "name" : "klaudeclaw/php-allegro-webapi",
+    "description" : "Truly simple PHP client for Allegro WebAPI. Forked from wiatrogon/php-allegro-webapi",
     "keywords" : [
         "allegro",
         "soap"
     ],
     "authors" : [
         {
-            "name" : "Piotr Jakubik",
-            "email" : "wiatrogon@gmail.com",
+            "name" : "Michał Hubczyk",
+            "email" : "klaudek@gmail.com",
             "role" : "Developer"
         }
     ],
